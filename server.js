@@ -1,9 +1,15 @@
 var http = require('http');
 var port = 3333;
+var serveFile = require('./serveFile.js');
 
 http.createServer(function (req, res){
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end('Hello World!');
+	console.log(req.headers);	
+	console.log(req.method);
+	console.log(req.url);
+
+	if (req.method == "GET"){
+		serveFile(req, res);
+	} 
 }).listen(port);
 
 console.log('The server is running on port ' + port + '.');
