@@ -1,0 +1,4 @@
+source(s):	http://www.nodebeginner.org/
+		http://nodejs.org/
+
+recap:  I have learned the basic of setting up a simple http server with node js.  The server servers files, html, css, jpg, and png files as of now.  This also helps us understand how a server is set up in the first place, although node js obviously abstracts some of the underlying challenges.  
